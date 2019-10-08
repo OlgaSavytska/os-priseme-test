@@ -1,0 +1,58 @@
+.container_header {
+  max-width: 768px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.header_color1 {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 768px;
+  background:
+    radial-gradient(ellipse, rgb(173, 107, 7) 0%, rgb(143, 88, 6) 0%, rgb(102, 63, 4) 100%);
+
+}
+
+
+.text_little_header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 5px;
+  line-height: 6px;
+  letter-spacing: 0.3em;
+  margin: 0 auto;
+  color: #FFFFFF;
+  width: 287px;
+  height: 12px;
+  margin-bottom: 10px;
+}
+
+.name_user {
+  width: 110px;
+  height: 34px;
+  width: 110px;
+  height: 34px;
+  font-family: Vollkorn;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FFFFFF;
+  margin: 10px;
+
+  font-family: Vollkorn;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+
+.text_prise {
+  width: 311px;
+  height: 54px;
+  font-family: Vollkorn;
+  font-size: 24px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+}
