@@ -1,0 +1,114 @@
+.container_best {
+  max-width: 768px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+}
+
+.best_color1 {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 768px;
+  background: #663F04;
+  overflow: hidden;
+  position: relative;
+  /* background:
+    radial-gradient(ellipse, rgb(173, 107, 7) 0%, rgb(143, 88, 6) 0%, rgb(102, 63, 4) 100%); */
+
+}
+
+
+.borders2 {
+  max-width: 100%;
+  padding: 21px;
+  padding-bottom: 0;
+  position: absolute;
+  top: -9px;
+  overflow: hidden;
+  height: 621px;
+}
+
+.elipse1 {
+  height: 606px;
+  width: 216%;
+
+}
+
+.best_name {
+  width: 291px;
+  height: 16px;
+  font-family: Vollkorn;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  margin: 17px 0px;
+}
+
+.best_descr {
+  width: 291px;
+  height: 16px;
+  font-family: Vollkorn;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  margin: 10px 0px;
+  margin-bottom: 50px;
+}
+
+.best_descr2 {
+  width: 248px;
+  font-family: Vollkorn;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #FFE132;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+}
+
+.best_descr2::after {
+  content: '';
+  margin: 0;
+  position: absolute;
+  width: 239px;
+  height: 10px;
+  left: 0px;
+  top: 106px;
+  z-index: 11;
+  border: 5px solid #DBAB00;
+}
+
+.best_descr3 {
+  width: 198px;
+  height: 99px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 43px;
+  color: #FFFFFF;
+}
+
+.best_descr4 {
+  width: 153px;
+  height: 99px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 19px;
+  color: #FFFFFF;
+}
+
+.man {
+  position: absolute;
+  left: 64px;
+  top: 259px;
+  width: 80%;
+}
