@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import s from './Form.module.css';
 import arrow from '../../images/Vector3.7.png';
 
+
+// const inputData1
 class Form extends Component {
   state = {
     inputAgree: true,
@@ -15,20 +17,15 @@ class Form extends Component {
   handleChange = e => {
     this.setState({
       [e.target.name]: e.target.value,
+
     });
+    console.log(this.state);
   };
 
 
   handleSubmit = e => {
     e.preventDefault();
 
-    // const { inputAgree,
-    //   inputData,
-    //   inputDay,
-    //   inputNumber,
-    //   inputAdress,
-    //   inputYesOrNot,
-    //   inputOkNoProblem } = this.state;
 
     this.setState({
       inputAgree: true,
@@ -44,15 +41,21 @@ class Form extends Component {
     this.setState({ inputAgree: !this.state.inputAgree })
     console.log(this.state);
   }
+  // handleDataChecked = (inputData1) => {
+  //   const inputData1 = "hhhhhhh";
+  //   this.setState({ inputData: this.state.inputData1 })
+  //   console.log(this.state);
+  // }
 
 
   render() {
     const {
-      inputData,
       inputDay,
       inputNumber,
       inputAdress,
     } = this.state;
+
+
     return (<div className={s.delivery_container} >
       <div className={s.form_cont}>
         <h2 className={s.form_title}>Бланк на доставку виграшу</h2>
@@ -67,6 +70,13 @@ class Form extends Component {
             <label className={s.label1}><p className={s.label1_text
             }>Я, Name,{'\n'} як Головний переможець Акції погоджуюсь отримати свій виграш – 317 000,00 гривень – готівкою.</p></label>
           </div>
+          <p className={s.label2_text}>Я очікую доставку грошового Призу:</p>
+          <input
+            name="inputData"
+            value={"hello"}
+            type="checkbox"
+            onChange={this.handleChange}
+            className={s.form_data} />
         </form>
       </div>
     </div >)

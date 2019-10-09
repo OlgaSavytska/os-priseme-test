@@ -90,3 +90,13 @@
 .form {
   width: 274px;
 }
+
+.label2_text {
+  width: 256px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
