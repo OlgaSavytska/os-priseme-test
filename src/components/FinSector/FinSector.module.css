@@ -3,7 +3,7 @@
   padding: 21px;
   padding-bottom: 0;
   overflow: hidden;
-  height: 576px;
+  height: 20000px;
 }
 
 .fin_sector_name {
@@ -39,7 +39,7 @@
 
 }
 
-.fin_sector_red_title {
+.fin_sector_red_title1 {
   width: 287px;
   height: 67px;
   font-family: Vollkorn;
@@ -51,7 +51,7 @@
   z-index: 1;
 }
 
-.fin_sector_red_title::after {
+.fin_sector_red_title1::after {
   content: url('../../images/Group4.png');
   margin: 0;
   display: block;
@@ -84,4 +84,93 @@
   font-size: 12px;
   line-height: 18px;
   color: #000000;
+}
+
+.fin_sector_p_f_y_descr2 {
+  width: 284px;
+  height: 83px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  margin-top: 40px;
+}
+
+.num {
+  color: #DD9E23;
+  font-weight: bold;
+}
+
+.div_block {
+  background: #F8E8AF;
+  width: 330px;
+  margin-left: -22px;
+}
+
+.fin_sector_block {
+  color: #000000;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* background: #F8E8AF; */
+  width: 231px;
+  height: 73px;
+  margin: 10px auto;
+  margin-bottom: 0;
+}
+
+.fin_sector_p_f_y_descr3 {
+  width: 284px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.diplom1 {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+.button_dowload {
+  width: 282px;
+  height: 53px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #A70B0B;
+  box-shadow: 0px 0px 15px #DD9E23;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.diplom2 {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+.fin_sector_red_title2 {
+  width: 321px;
+  font-family: Vollkorn;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #A70B0B;
+  position: relative;
+  border: 5px solid #DD9E23;
+  ;
+  padding: 1px 2px 1px 2px;
+  /* margin-right: -32px; */
+  margin-left: -22px;
 }
