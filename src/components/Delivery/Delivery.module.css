@@ -1,0 +1,37 @@
+.delivery_container {
+  max-width: 100%;
+  padding: 21px;
+  padding-bottom: 0;
+  overflow: hidden;
+  height: 200px;
+}
+
+.delivery_title {
+  width: 291px;
+  font-family: Vollkorn;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  margin: 10px 0px;
+  margin-bottom: 43px;
+  position: relative;
+}
+
+.delivery_title::after {
+  content: url('../../images/Group4.png');
+  margin: 0;
+  display: block;
+  z-index: 11;
+  position: absolute;
+  top: 26px;
+  left: -29px;
+}
+
+.delivery_name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 15px;
+}
