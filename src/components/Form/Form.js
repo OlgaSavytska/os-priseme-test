@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import s from './Form.module.css';
+import arrow from '../../images/Vector3.7.png';
 
 class Form extends Component {
   state = {
@@ -56,12 +57,16 @@ class Form extends Component {
       <div className={s.form_cont}>
         <h2 className={s.form_title}>Бланк на доставку виграшу</h2>
         <form className={s.form} onSubmit={this.handleChecked}>
-          <input
-            name="inputAgree"
-            checked={this.state.inputAgree}
-            type="checkbox"
-            onChange={this.handleChecked}
-            className={s.form_agree} />
+          <div className={s.form_flex}>
+            <input
+              name="inputAgree"
+              checked={this.state.inputAgree}
+              type="checkbox"
+              onChange={this.handleChecked}
+              className={s.form_agree} />
+            <label className={s.label1}><p className={s.label1_text
+            }>Я, Name,{'\n'} як Головний переможець Акції погоджуюсь отримати свій виграш – 317 000,00 гривень – готівкою.</p></label>
+          </div>
         </form>
       </div>
     </div >)
