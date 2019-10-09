@@ -3,7 +3,6 @@
   padding: 21px;
   padding-bottom: 0;
   overflow: hidden;
-  height: 200px;
 }
 
 .delivery_title {
@@ -34,4 +33,50 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 15px;
+}
+
+.delivery_istruction {
+  width: 291px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  white-space: pre-line;
+}
+
+.num {
+  color: #DD9E23;
+  font-weight: bold;
+}
+
+.delivery_istruction_border {
+  width: 321px;
+  font-family: Vollkorn;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #A70B0B;
+  position: relative;
+  border: 5px solid #DD9E23;
+  padding: 1px 2px 1px 2px;
+  /* margin-right: -32px; */
+  margin-left: -22px;
+}
+
+.delivery_button {
+  width: 282px;
+  height: 53px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #A70B0B;
+  box-shadow: 0px 0px 15px #DD9E23;
+  border: none;
+  margin-bottom: 20px;
 }
