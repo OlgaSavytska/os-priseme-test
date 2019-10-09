@@ -2,6 +2,7 @@ import React from 'react';
 import s from '../Header/Header.module.css';
 import logo from '../../images/Group-1.png';
 import back from '../../images/Ellipse.png';
+import woman from '../../images/Depositphotos_27353059_xl-2015.png';
 
 const Header = () => {
   return <div className={s.container_header}>
@@ -17,6 +18,8 @@ const Header = () => {
           <p className={s.header_button_text}>обрати дату {'\n'}
             нагородження</p>
         </a>
+        <img src={woman} alt="happy woman" className={s.header_woman} />
+        <p className={s.block_signature}>З повагою, Голова Фінансового відділу {'\n'}з виплати призів Олена Філімонова. *</p>
       </div>
     </div>
   </div >
