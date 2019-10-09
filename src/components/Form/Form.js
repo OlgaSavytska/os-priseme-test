@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import s from './Form.module.css';
-import arrow from '../../images/Vector3.7.png';
 
 
 // const inputData1
@@ -14,13 +13,7 @@ class Form extends Component {
     inputYesOrNot: false,
     inputOkNoProblem: true
   }
-  handleChange = e => {
-    this.setState({
-      [e.target.name]: e.target.value,
 
-    });
-    console.log(this.state);
-  };
 
 
   handleSubmit = e => {
@@ -46,6 +39,12 @@ class Form extends Component {
   //   this.setState({ inputData: this.state.inputData1 })
   //   console.log(this.state);
   // }
+  handleChange = e => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+    console.log(this.state);
+  };
 
 
   render() {
@@ -73,8 +72,14 @@ class Form extends Component {
           <p className={s.label2_text}>Я очікую доставку грошового Призу:</p>
           <input
             name="inputData"
-            value={"hello"}
-            type="checkbox"
+            value={'Першого тижня виплат (01–05.05)'}
+            type="radio"
+            onChange={this.handleChange}
+            className={s.form_data} />
+          <input
+            name="inputData"
+            value={'Другого тижня виплат (06–12.05)'}
+            type="radio"
             onChange={this.handleChange}
             className={s.form_data} />
         </form>
