@@ -1,27 +1,31 @@
 .finsector_container {
-  background-color: #ffffff;
+  max-width: 100%;
+  padding: 21px;
+  padding-bottom: 0;
+  overflow: hidden;
+  height: 576px;
 }
 
 .fin_sector_name {
-  width: 200px;
+  width: 291px;
   height: 16px;
   font-family: Vollkorn;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
   color: #000000;
-  margin: 10px auto;
+  margin: 10px 0px;
 }
 
 .fin_sector_name1 {
-  width: 200px;
+  width: 291px;
   height: 37px;
   font-family: Vollkorn;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
   color: #000000;
-  margin: 0 auto;
+
 }
 
 .fin_sector_congratulations {
@@ -32,11 +36,11 @@
   line-height: 23px;
   text-align: center;
   color: #030303;
-  margin: auto;
+
 }
 
 .fin_sector_red_title {
-  width: 323px;
+  width: 287px;
   height: 67px;
   font-family: Vollkorn;
   font-size: 24px;
@@ -53,6 +57,31 @@
   display: block;
   z-index: 11;
   position: absolute;
-  top: 0;
-  left: -13px;
+  top: -8px;
+  left: -29px;
+}
+
+.fin_sector_proud_of_you {
+  width: 233px;
+  height: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  margin-top: 36px;
+  margin-left: 20px;
+}
+
+.fin_sector_p_f_y_descr1 {
+  width: 284px;
+  height: 83px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
 }
