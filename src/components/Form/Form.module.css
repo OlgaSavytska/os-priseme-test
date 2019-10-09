@@ -1,0 +1,30 @@
+.delivery_container {
+  max-width: 100%;
+  padding: 21px;
+  padding-bottom: 0;
+  overflow: hidden;
+  height: 2000px;
+}
+
+.form_cont {
+  width: 321px;
+  display: flex;
+  flex-flow: column;
+  border: 5px solid #DD9E23;
+  padding: 1px 2px 1px 2px;
+  /* margin-right: -32px; */
+  margin-left: -22px;
+  align-items: center;
+}
+
+.form_title {
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #000000;
+}
