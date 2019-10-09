@@ -1,0 +1,58 @@
+.finsector_container {
+  background-color: #ffffff;
+}
+
+.fin_sector_name {
+  width: 200px;
+  height: 16px;
+  font-family: Vollkorn;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  margin: 10px auto;
+}
+
+.fin_sector_name1 {
+  width: 200px;
+  height: 37px;
+  font-family: Vollkorn;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  margin: 0 auto;
+}
+
+.fin_sector_congratulations {
+  width: 291px;
+  height: 46px;
+  font-family: Vollkorn;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #030303;
+  margin: auto;
+}
+
+.fin_sector_red_title {
+  width: 323px;
+  height: 67px;
+  font-family: Vollkorn;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #A70B0B;
+  position: relative;
+  z-index: 1;
+}
+
+.fin_sector_red_title::after {
+  content: url('../../images/Group4.png');
+  margin: 0;
+  display: block;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: -13px;
+}
