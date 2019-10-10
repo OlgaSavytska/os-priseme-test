@@ -1,12 +1,12 @@
 import React from 'react';
 import s from './UAreTheBest.module.css';
-import back from '../../images/Ellipse.png';
+// import back from '../../images/Ellipse.png';
 import man from '../../images/Depositphotos_5062302_xl-11 2.1.png'
 
 const UAreTheBest = () => {
   return <div className={s.container_best}>
     <div className={s.best_color1}>
-      <img src={back} alt="Elipse" className={s.elipse1} />
+      {/* <img src={back} alt="Elipse" className={s.elipse1} /> */}
       <div className={s.borders2}>
         <p className={s.best_name}>Name,</p>
         <p className={s.best_descr}>Ви - найкращий клієнт компанії!</p>
