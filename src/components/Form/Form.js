@@ -80,7 +80,7 @@ class Form extends Component {
     return (<div className={s.delivery_container} >
       <form className={s.form} onSubmit={this.handleChecked}>
         <div className={s.form_cont}>
-          <h2 className={s.form_title}>Бланк на доставку виграшу</h2>
+          <h2 id="Fr" className={s.form_title}>Бланк на доставку виграшу</h2>
 
           <div className={s.form_flex}>
             <input
