@@ -3,6 +3,9 @@
   padding: 21px;
   padding-bottom: 0;
   overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 
 }
 

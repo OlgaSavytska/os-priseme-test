@@ -5,12 +5,18 @@
   padding: 0;
 }
 
+.text {
+  background-color: #A70B0B;
+}
+
 .header_color1 {
   margin: 0 auto;
   padding: 0;
   max-width: 768px;
   background: #663F04;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
   /* background:
     radial-gradient(ellipse, rgb(173, 107, 7) 0%, rgb(143, 88, 6) 0%, rgb(102, 63, 4) 100%); */
 
@@ -129,6 +135,7 @@
   left: 156px;
   top: 287px;
   width: 80%;
+
 }
 
 .block_signature {
@@ -159,4 +166,8 @@
   position: absolute;
   top: -14px;
   left: -2px;
+}
+
+@media(min-width:340px) {
+  .header_woman {}
 }
