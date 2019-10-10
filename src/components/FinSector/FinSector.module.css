@@ -10,8 +10,7 @@
 }
 
 .fin_sector_name {
-  width: 291px;
-  height: 16px;
+
   font-family: Vollkorn;
   font-size: 24px;
   line-height: 30px;
@@ -21,8 +20,7 @@
 }
 
 .fin_sector_name1 {
-  width: 291px;
-  height: 37px;
+
   font-family: Vollkorn;
   font-size: 24px;
   line-height: 30px;
@@ -32,8 +30,7 @@
 }
 
 .fin_sector_congratulations {
-  width: 291px;
-  height: 46px;
+
   font-family: Vollkorn;
   font-size: 18px;
   line-height: 23px;
@@ -65,8 +62,7 @@
 }
 
 .fin_sector_proud_of_you {
-  width: 233px;
-  height: 36px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -79,8 +75,7 @@
 }
 
 .fin_sector_p_f_y_descr1 {
-  width: 284px;
-  height: 83px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -90,15 +85,14 @@
 }
 
 .fin_sector_p_f_y_descr2 {
-  width: 284px;
-  height: 83px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
   color: #000000;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .num {
@@ -109,7 +103,6 @@
 .div_block {
   background: #F8E8AF;
   width: 330px;
-  margin-left: -22px;
 }
 
 .fin_sector_block {
@@ -127,7 +120,7 @@
 }
 
 .fin_sector_p_f_y_descr3 {
-  width: 284px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -164,7 +157,6 @@
 }
 
 .fin_sector_red_title2 {
-  width: 321px;
   font-family: Vollkorn;
   font-size: 24px;
   line-height: 33px;
@@ -175,5 +167,5 @@
   ;
   padding: 1px 2px 1px 2px;
   /* margin-right: -32px; */
-  margin-left: -22px;
+
 }
