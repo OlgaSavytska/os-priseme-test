@@ -48,6 +48,10 @@ class Form extends Component {
     this.setState({ inputYesOrNot: !this.state.inputYesOrNot })
     console.log(this.state);
   }
+  handleChecked2 = () => {
+    this.setState({ nputOkNoProblem: !this.state.nputOkNoProblem })
+    console.log(this.state);
+  }
   // handleDataChecked = (inputData1) => {
   //   const inputData1 = "hhhhhhh";
   //   this.setState({ inputData: this.state.inputData1 })
@@ -188,6 +192,17 @@ class Form extends Component {
             className={s.form_agree1} />
           <label className={s.label3}><p className={s.label3_text
           }> Я відмовляюсь від БЕЗКОШТОВНОЇ доставки мені виграшу. Прошу вислати мені 317 000,00 гривень поштовим переказом.</p></label>
+
+          <div className={s.final}>
+            <input
+              name="inputOkNoProblem"
+              checked={this.state.inputOkNoProblem}
+              type="checkbox"
+              onChange={this.handleChecked2}
+              className={s.form_agree2} />
+            <label className={s.label4}><p className={s.label4_text
+            }> Я заповнюю цей документ і роблю обов’язкове замовлення товарів</p></label>
+          </div>
         </form>
       </div>
     </div >
