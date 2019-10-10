@@ -6,6 +6,7 @@ import UAreTheBest from '../src/components/UAreTheBest/UAreTheBest';
 import Delivery from '../src/components/Delivery/Delivery';
 import Instruction from '../src/components/Instruction/Instruction';
 import Form from '../src/components/Form/Form';
+import Congratulation from '../src/components/Congratulation/Congratulation';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Delivery />
       <Instruction />
       <Form />
+      <Congratulation />
     </>
   )
 }

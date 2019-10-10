@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import s from './Form.module.css';
 import Select from 'react-select';
+import { Link } from "react-scroll";
 
 const options = [
   { value: 'Понеділок', label: 'Понеділок' },
@@ -39,6 +40,7 @@ class Form extends Component {
       inputYesOrNot: false,
       inputOkNoProblem: true
     });
+
   };
   handleChecked = () => {
     this.setState({ inputAgree: !this.state.inputAgree })
@@ -206,9 +208,18 @@ class Form extends Component {
             }> Я заповнюю цей документ і роблю обов’язкове замовлення товарів</p></label>
           </div>
         </div>
-        <button type="submit" className={s.button}>
-          НАДІСЛАТИ
+        <Link
+          activeClass="active"
+          to="Congrat"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={1500}
+          className={s.header_button}>
+          <button type="submit" className={s.button}>
+            НАДІСЛАТИ
         </button>
+        </Link >
         <p className={s.congliration}>Щоб Служба автоматичної верифікації не відбракувала Ваш БЛАНК НА ДОСТАВКУ ВИГРАШУ, зробіть обов’язкове замовлення товарів із акційної пропозиції.</p>
       </form>
     </div >
