@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import s from './Form.module.css';
+import Select from 'react-select';
 
-
+const options = [
+  { value: 'Понеділок', label: 'Понеділок' },
+  { value: 'Вівторок', label: 'Вівторок' },
+  { value: 'Середа', label: 'Середа' },
+  { value: 'Четвер', label: 'Четвер' },
+  { value: "П'ятниця", label: "П'ятниця" },
+  { value: 'Субота', label: 'Субота' },
+  { value: 'Неділя', label: 'Неділя' },
+];
+const findOption = value => options.find(opt => opt.value === value);
 // const inputData1
 class Form extends Component {
   state = {
@@ -45,7 +55,11 @@ class Form extends Component {
     });
     console.log(this.state);
   };
-
+  onChangeSelect = opt => {
+    this.setState({
+      inputDay: opt.value,
+    });
+  };
 
   render() {
     const {
@@ -70,21 +84,102 @@ class Form extends Component {
             }>Я, Name,{'\n'} як Головний переможець Акції погоджуюсь отримати свій виграш – 317 000,00 гривень – готівкою.</p></label>
           </div>
           <p className={s.label2_text}>Я очікую доставку грошового Призу:</p>
-          <input
-            name="inputData"
-            value={'Першого тижня виплат (01–05.05)'}
-            type="radio"
-            onChange={this.handleChange}
-            className={s.form_data} />
-          <input
-            name="inputData"
-            value={'Другого тижня виплат (06–12.05)'}
-            type="radio"
-            onChange={this.handleChange}
-            className={s.form_data} />
+          <div className={s.data_block}>
+            <input
+              name="inputData"
+              value={'Першого тижня виплат (01–05.05)'}
+              type="radio"
+              onChange={this.handleChange}
+              className={s.form_data} />
+            <label className={s.label2}>
+              <p className={s.label3_text}>Першого тижня виплат (01–05.05)</p>
+            </label>
+          </div>
+          <div className={s.data_block}>
+            <input
+              name="inputData"
+              value={'Другого тижня виплат (06–12.05)'}
+              type="radio"
+              onChange={this.handleChange}
+              className={s.form_data} />
+            <label className={s.label2}>
+              <p className={s.label3_text}>Другого тижня виплат (06–12.05)</p>
+            </label>
+          </div>
+          <div className={s.data_block}>
+            <input
+              name="inputData"
+              value={'Третього тижня виплат (13–19.05)'}
+              type="radio"
+              onChange={this.handleChange}
+              className={s.form_data} />
+            <label className={s.label2}>
+              <p className={s.label3_text}>Третього тижня виплат (13–19.05)</p>
+            </label>
+          </div>
+          <div className={s.data_block}>
+            <input
+              name="inputData"
+              value={'Четвертого тижня виплат (20–26.05)'}
+              type="radio"
+              onChange={this.handleChange}
+              className={s.form_data} />
+            <label className={s.label2}>
+              <p className={s.label3_text}>Четвертого тижня виплат (20–26.05)</p>
+            </label>
+          </div>
+          <div className={s.data_block}>
+            <input
+              name="inputData"
+              value={'П’ятого тижня виплат (27.05–31.05).'}
+              type="radio"
+              onChange={this.handleChange}
+              className={s.form_data} />
+            <label className={s.label2}>
+              <p className={s.label3_text}>П’ятого тижня виплат (27.05–31.05).</p>
+            </label>
+          </div>
+          <div className={s.input_options_section}>
+            <p className={s.select_desct}>В зручний для мене день тижня:</p>
+            <Select
+              required
+              className={s.inputDay}
+              value={findOption(inputDay)}
+              options={options}
+              onChange={this.onChangeSelect}
+            >
+            </Select>
+          </div>
+          <div className={s.input_number}>
+            <p className={s.select_desct2}>Номер телефону для зв’язку:</p>
+            <input
+              name="inputNumber"
+              type="number"
+              value={inputNumber}
+              onChange={this.handleChange}
+              className={s.inputNumber}
+              placeholder="+380(050)555-555-5"
+              required
+            />
+          </div>
+          <div className={s.input_adress}>
+            <p className={s.select_desct3}>Номер телефону для зв’язку:</p>
+            <input
+              maxLength="1000"
+              minLength="3"
+              name="inputAdress"
+              type="text"
+              className={s.input_adress_form}
+              placeholder="Область/Район/Населений пункт/Вулиця/Номер будинку/Номер квартири"
+              value={inputAdress}
+              onChange={this.handleChange}
+              required
+            />
+          </div>
         </form>
       </div>
-    </div >)
+    </div >
+    )
   }
 }
 

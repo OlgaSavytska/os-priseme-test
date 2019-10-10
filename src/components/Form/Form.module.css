@@ -16,7 +16,7 @@
   /* margin-right: -32px; */
   margin-left: -22px;
   align-items: center;
-
+  height: 3000px;
 }
 
 .form_title {
@@ -99,4 +99,81 @@
   font-size: 18px;
   line-height: 23px;
   color: #000000;
+}
+
+.label3_text {
+  width: 227px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  margin: 0;
+  margin-left: 51px;
+  width: 213px;
+  position: relative;
+}
+
+.form_data {
+  position: absolute;
+}
+
+.data_block {
+  margin-bottom: 20px;
+}
+
+.select_desct {
+  width: 263px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+}
+
+.select_desct2 {
+  width: 263px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+}
+
+.inputNumber {
+  border: 2px solid #DD9E23;
+  padding: 10px 20px;
+  width: 272px;
+}
+
+.select_desct3 {
+  width: 263px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+}
+
+.input_adress_form {
+  width: 272px;
+  border: 2px solid #DD9E23;
+  padding: 1px 20px;
+  width: 272px;
+  height: 42px;
+}
+
+.input_adress_form::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 12px;
 }
