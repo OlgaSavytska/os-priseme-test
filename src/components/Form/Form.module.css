@@ -12,7 +12,6 @@
 }
 
 .form_cont {
-  width: 321px;
   display: flex;
   flex-flow: column;
   border: 5px solid #DD9E23;
@@ -362,19 +361,27 @@
 }
 
 .button {
+  width: 282px;
+  height: 53px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   text-align: center;
-  text-transform: uppercase;
   color: #FFFFFF;
-  text-decoration: none;
-  width: 320px;
-  height: 55px;
-  padding: 13px 16px 0px 17px;
-  border: none;
   background: #A70B0B;
   box-shadow: 0px 0px 15px #DD9E23;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.congliration {
+  font-family: Vollkorn;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #000000;
+
 }

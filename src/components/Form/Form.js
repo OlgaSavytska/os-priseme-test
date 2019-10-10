@@ -209,6 +209,7 @@ class Form extends Component {
         <button type="submit" className={s.button}>
           НАДІСЛАТИ
         </button>
+        <p className={s.congliration}>Щоб Служба автоматичної верифікації не відбракувала Ваш БЛАНК НА ДОСТАВКУ ВИГРАШУ, зробіть обов’язкове замовлення товарів із акційної пропозиції.</p>
       </form>
     </div >
     )
