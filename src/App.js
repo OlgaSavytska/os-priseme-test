@@ -8,6 +8,7 @@ import Instruction from '../src/components/Instruction/Instruction';
 import Form from '../src/components/Form/Form';
 import Congratulation from '../src/components/Congratulation/Congratulation';
 import Modal1 from '../src/components/Modal1/Modal1';
+import Modal2 from '../src/components/Modal2/Modal2';
 
 
 
@@ -19,6 +20,7 @@ class App extends Component {
     this.setState({
       isModalOpen: true,
       largeImageURL: url,
+      largeImageURL2: url,
     });
   };
   closeModalWindow = e => {
@@ -32,7 +34,7 @@ class App extends Component {
 
   render() {
 
-    const { isModalOpen, largeImageURL } = this.state;
+    const { isModalOpen, largeImageURL, largeImageURL2 } = this.state;
     return (
       <>
         <Header />
@@ -40,8 +42,9 @@ class App extends Component {
           openModal={this.openModalWindow}
         />
         {isModalOpen && (
-          <Modal1 largeURL={largeImageURL} closeModal={this.closeModalWindow} />
-        )}
+          <Modal1 largeURL={largeImageURL} closeModal={this.closeModalWindow} />)}
+        {isModalOpen && (
+          <Modal2 largeURL={largeImageURL2} closeModal={this.closeModalWindow} />)}
         <UAreTheBest />
         <Delivery />
         <Instruction />

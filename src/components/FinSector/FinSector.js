@@ -8,7 +8,7 @@ import diplom2 from '../../images/Frame5.2.png';
 
 
 
-const FinSector = ({ openModal, largeURL }) => {
+const FinSector = ({ openModal, largeURL, largeURL2 }) => {
   return <div className={s.finsector_container
   }>
     <p className={s.fin_sector_name}>Name,</p>
@@ -26,10 +26,17 @@ const FinSector = ({ openModal, largeURL }) => {
       onClick={() => openModal(largeURL)}
       type="button"
       className={s.fullscreen_button}
+      id="sertificate"
     >
-      <img src={diplom1} alt="diplom1" className={s.diplom1} /> </button>
+      <img id="sertificate" src={diplom1} alt="diplom1" className={s.diplom1} /> </button>
     <button className={s.button_dowload}>ЗАВАНТАЖИТИ</button>
-    <img src={diplom2} alt="diplom2" className={s.diplom2} />
+    <button
+      onClick={() => openModal(largeURL2)}
+      type="button"
+      className={s.fullscreen_button}
+      id="sertificate1"
+    >
+      <img id="sertificate1" src={diplom2} alt="diplom2" className={s.diplom2} /></button>
     <p className={s.fin_sector_red_title2}>Завдяки Вашому ЧЕРВОНОМУ ДИПЛОМУ ПЕРЕМОЖЦЯ доставку виграшу буде здійснено БЕЗКОШТОВНО!</p>
   </div >
 }

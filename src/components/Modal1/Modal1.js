@@ -7,7 +7,7 @@ const Modal1 = ({ closeModal }) => {
   return (
     <div className={s.overlay} onClick={closeModal}>
       <div className={s.modal}>
-        <img src={largeURL} alt="imgLarge" />
+        <img id="sertificate" src={largeURL} alt="imgLarge" />
       </div>
     </div>
   );
