@@ -29,7 +29,9 @@ const FinSector = ({ openModal, largeURL, largeURL2 }) => {
       id="sertificate"
     >
       <img id="sertificate" src={diplom1} alt="diplom1" className={s.diplom1} /> </button>
-    <button className={s.button_dowload}>ЗАВАНТАЖИТИ</button>
+    <a href="../../images/Download.zip" download>
+      <button className={s.button_dowload}>ЗАВАНТАЖИТИ</button>
+    </a>
     <button
       onClick={() => openModal(largeURL2)}
       type="button"
