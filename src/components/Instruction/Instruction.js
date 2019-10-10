@@ -1,11 +1,11 @@
 import React from 'react';
 import s from './Instruction.module.css';
-import back from '../../images/Ellipse.png';
+// import back from '../../images/Ellipse.png';
 
 const Instruction = () => {
   return <div className={s.container_best}>
     <div className={s.best_color1}>
-      <img src={back} alt="Elipse" className={s.elipse1} />
+      {/* <img src={back} alt="Elipse" className={s.elipse1} /> */}
       <div className={s.borders2}>
         <p className={s.ist_title}>ІНСТРУКЦІЯ З ОДЕРЖАННЯ ВИГРАШУ</p>
         <ul className={s.ist_items}>

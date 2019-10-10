@@ -3,7 +3,11 @@
   padding: 21px;
   padding-bottom: 0;
   overflow: hidden;
-  height: 2000px;
+  display: flex;
+  /* flex-flow: column; */
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 
 }
 
@@ -14,7 +18,6 @@
   border: 5px solid #DD9E23;
   padding: 1px 2px 1px 2px;
   /* margin-right: -32px; */
-  margin-left: -22px;
   align-items: center;
   height: 3000px;
 }
@@ -176,4 +179,89 @@
   font-weight: normal;
   font-size: 9px;
   line-height: 12px;
+}
+
+.label2 {
+  width: 240px;
+  height: 67px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+
+}
+
+.label2::before {
+  content: url("../../images/Ellipse2.4.png");
+  display: block;
+  margin: 0;
+  position: absolute;
+  opacity: 1;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 3px;
+  z-index: 11;
+  cursor: pointer;
+}
+
+.form_data {
+  opacity: 0;
+  width: 40px;
+  position: absolute;
+  z-index: 111;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.label1::before {
+  content: url("../../images/Vector3.7.png");
+  display: block;
+  margin: 0;
+  position: absolute;
+  opacity: 0;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 14px;
+  z-index: 11;
+  cursor: pointer;
+}
+
+
+
+.form_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_agree {
+  opacity: 0;
+  width: 40px;
+  position: absolute;
+  z-index: 111;
+  cursor: pointer;
+}
+
+
+.label1_text {
+  margin: 0;
+  white-space: pre-line;
+  margin-left: 51px;
+  width: 213px;
+}
+
+.form_agree:checked+.label1::before {
+  opacity: 1;
 }

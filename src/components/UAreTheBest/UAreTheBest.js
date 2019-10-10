@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './UAreTheBest.module.css';
 // import back from '../../images/Ellipse.png';
-import man from '../../images/Depositphotos_5062302_xl-11 2.1.png'
+import man from '../../images/man.png';
 
 const UAreTheBest = () => {
   return <div className={s.container_best}>

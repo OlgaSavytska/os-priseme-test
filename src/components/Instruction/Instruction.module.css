@@ -3,7 +3,6 @@
   overflow: hidden;
   margin: 0 auto;
   padding: 0;
-  display: block;
 }
 
 .best_color1 {
@@ -12,10 +11,15 @@
   max-width: 768px;
   background: #663F04;
   overflow: hidden;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  background-image: url('../../images/Ellipse.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* background:
     radial-gradient(ellipse, rgb(173, 107, 7) 0%, rgb(143, 88, 6) 0%, rgb(102, 63, 4) 100%); */
-
 }
 
 
@@ -23,9 +27,15 @@
   max-width: 100%;
   padding: 21px;
   padding-bottom: 0;
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   top: -9px;
-  overflow: hidden;
+  padding-bottom: 100px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+
 }
 
 .elipse1 {
@@ -64,7 +74,9 @@
 }
 
 .ist_item {
-  margin: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .ist_item_text {
@@ -146,7 +158,6 @@
 }
 
 .ist_item_non_text {
-  width: 293px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -156,7 +167,6 @@
   color: #FFFFFF;
   border: 1px solid #DD9E23;
   padding: 15px 20px;
-  margin-left: -7px;
   margin-bottom: 30px;
 }
 
@@ -183,7 +193,6 @@
 }
 
 .ist_if {
-  width: 321px;
   font-family: Vollkorn;
   font-size: 24px;
   line-height: 33px;
@@ -193,6 +202,5 @@
   border: 5px solid #DD9E23;
   padding: 1px 2px 1px 2px;
   background: #F5E586;
-  margin-left: -22px;
   padding: 10px;
 }
