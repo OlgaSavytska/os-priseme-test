@@ -1,13 +1,13 @@
 import React from 'react';
 import s from '../Header/Header.module.css';
 import logo from '../../images/Group-1.png';
-import back from '../../images/Ellipse.png';
+// import back from '../../images/Ellipse.png';
 import woman from '../../images/Depositphotos_27353059_xl-2015.png';
 
 const Header = () => {
   return <div className={s.container_header}>
     <div className={s.header_color1}>
-      <img src={back} alt="Elipse" className={s.elipse} />
+      {/* <img src={back} alt="Elipse" className={s.elipse} /> */}
       <div className={s.borders}>
         <div className={s.text}>
           <p className={s.text_little_header}>*У разі Вашої перемоги в Акції "Золотий Фонд" та виникнення подібної ситуації Ви можете отримати такого листа */</p>

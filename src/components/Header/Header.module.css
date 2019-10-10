@@ -5,9 +5,7 @@
   padding: 0;
 }
 
-.text {
-  background-color: #A70B0B;
-}
+
 
 .header_color1 {
   margin: 0 auto;
@@ -17,6 +15,11 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  background-image: url('../../images/Ellipse.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* background:
     radial-gradient(ellipse, rgb(173, 107, 7) 0%, rgb(143, 88, 6) 0%, rgb(102, 63, 4) 100%); */
 
@@ -27,18 +30,12 @@
   max-width: 100%;
   padding: 21px;
   padding-bottom: 0;
-  position: absolute;
-  top: 30px;
-  overflow: hidden;
-  height: 576px;
+  /* position: absolute; */
+  position: relative;
+  top: -9px;
+  padding-bottom: 100px;
+  /* overflow: hidden; */
 }
-
-.elipse {
-  height: 606px;
-  width: 216%;
-
-}
-
 
 .text_little_header {
   font-family: Roboto;
@@ -58,7 +55,6 @@
   width: 110px;
   height: 34px;
   width: 110px;
-  height: 34px;
   font-family: Vollkorn;
   font-size: 24px;
   line-height: 33px;
@@ -131,10 +127,12 @@
 }
 
 .header_woman {
+  right: 10px;
+  bottom: -19px;
+  width: 77%;
+  margin-left: auto;
+  margin-right: -6em;
   position: absolute;
-  left: 156px;
-  top: 287px;
-  width: 80%;
 
 }
 
@@ -147,8 +145,8 @@
   white-space: pre-line;
   color: #FFFFFF;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  bottom: -9px;
+  right: -43px;
   margin: 0;
   width: 186px;
   height: 39px;
@@ -166,8 +164,4 @@
   position: absolute;
   top: -14px;
   left: -2px;
-}
-
-@media(min-width:340px) {
-  .header_woman {}
 }
