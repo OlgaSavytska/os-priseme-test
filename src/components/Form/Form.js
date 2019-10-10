@@ -78,9 +78,10 @@ class Form extends Component {
 
 
     return (<div className={s.delivery_container} >
-      <div className={s.form_cont}>
-        <h2 className={s.form_title}>Бланк на доставку виграшу</h2>
-        <form className={s.form} onSubmit={this.handleChecked}>
+      <form className={s.form} onSubmit={this.handleChecked}>
+        <div className={s.form_cont}>
+          <h2 className={s.form_title}>Бланк на доставку виграшу</h2>
+
           <div className={s.form_flex}>
             <input
               name="inputAgree"
@@ -184,15 +185,16 @@ class Form extends Component {
               required
             />
           </div>
-          <input
-            name="inputYesOrNot"
-            checked={this.state.inputYesOrNot}
-            type="checkbox"
-            onChange={this.handleChecked1}
-            className={s.form_agree1} />
-          <label className={s.label3}><p className={s.label3_text
-          }> Я відмовляюсь від БЕЗКОШТОВНОЇ доставки мені виграшу. Прошу вислати мені 317 000,00 гривень поштовим переказом.</p></label>
-
+          <div className={s.final}>
+            <input
+              name="inputYesOrNot"
+              checked={this.state.inputYesOrNot}
+              type="checkbox"
+              onChange={this.handleChecked1}
+              className={s.form_agree1} />
+            <label className={s.label3}><p className={s.label3_text
+            }> Я відмовляюсь від БЕЗКОШТОВНОЇ доставки мені виграшу. Прошу вислати мені 317 000,00 гривень поштовим переказом.</p></label>
+          </div>
           <div className={s.final}>
             <input
               name="inputOkNoProblem"
@@ -203,8 +205,11 @@ class Form extends Component {
             <label className={s.label4}><p className={s.label4_text
             }> Я заповнюю цей документ і роблю обов’язкове замовлення товарів</p></label>
           </div>
-        </form>
-      </div>
+        </div>
+        <button type="submit" className={s.button}>
+          НАДІСЛАТИ
+        </button>
+      </form>
     </div >
     )
   }
