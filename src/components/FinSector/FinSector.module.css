@@ -114,7 +114,7 @@
   line-height: 18px;
   /* background: #F8E8AF; */
   width: 231px;
-  height: 73px;
+  height: 102px;
   margin: 10px auto;
   margin-bottom: 0;
 }
@@ -170,6 +170,18 @@
 
 }
 
+.media_flex2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.media_flex3 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   .fin_sector_name1 {
     margin: 0;
@@ -206,10 +218,12 @@
     width: 200px;
     margin-top: 45px;
     margin-left: 50px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
   }
 
   .button_dowload {
     width: 150px;
-    margin-left: 25px;
   }
 }

@@ -90,6 +90,12 @@
   display: none;
 }
 
+.div_flex2 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
   .delivery_istruction {
     width: 300px;

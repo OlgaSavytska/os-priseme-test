@@ -11,6 +11,16 @@
 
 }
 
+.form {
+  display: flex;
+  flex-flow: column;
+}
+
+.header_button {
+  display: flex;
+  justify-content: center;
+}
+
 .form_cont {
   display: flex;
   flex-flow: column;
@@ -23,9 +33,9 @@
 
 .form_title {
 
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 22px;
   line-height: 23px;
   text-align: center;
@@ -308,9 +318,9 @@
 }
 
 .label4_text {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   margin-left: 51px;
@@ -384,6 +394,12 @@
 
   color: #000000;
 
+}
+
+.div_flex {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
