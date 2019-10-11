@@ -385,3 +385,44 @@
   color: #000000;
 
 }
+
+@media (min-width: 768px) {
+  .form_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 46px;
+    /* identical to box height */
+
+    text-align: center;
+  }
+
+  .label1_text {
+    margin: 0;
+    white-space: pre-line;
+    padding-left: 51px;
+    /* margin-left: auto; */
+    width: 400px;
+  }
+
+  .flex_div4 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .div_flex5 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .input_number {
+    margin-left: 20px;
+  }
+
+  .input_adress_form {
+    width: 550px;
+  }
+}
