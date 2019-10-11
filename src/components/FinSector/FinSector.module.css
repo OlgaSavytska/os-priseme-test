@@ -169,3 +169,47 @@
   /* margin-right: -32px; */
 
 }
+
+@media (min-width: 768px) {
+  .fin_sector_name1 {
+    margin: 0;
+  }
+
+  .fin_sector_congratulations {
+    margin: 0;
+  }
+
+  .fin_sector_red_title1 {
+    width: 780px;
+  }
+
+  .fin_sector_red_title1::after {
+    margin: 0;
+    display: block;
+    z-index: 11;
+    position: absolute;
+    top: -8px;
+    left: 183px;
+    width: 400px;
+  }
+
+  .media_flex1 {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .media_flex2 {
+    width: 300px;
+  }
+
+  .media_flex3 {
+    width: 200px;
+    margin-top: 45px;
+    margin-left: 50px;
+  }
+
+  .button_dowload {
+    width: 150px;
+    margin-left: 25px;
+  }
+}

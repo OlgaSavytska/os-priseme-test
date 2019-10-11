@@ -165,3 +165,79 @@
   top: -14px;
   left: -2px;
 }
+
+@media (min-width: 768px) {
+  .header_color1 {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 768px;
+    background: #663F04;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(/static/media/Ellipse.e7799fe7.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .borders {
+    max-width: 100%;
+    padding: 48px;
+    padding-bottom: 0;
+    position: none;
+    padding-bottom: 0;
+    overflow: visible;
+  }
+
+  .header_woman {
+    right: -90px;
+    bottom: -19px;
+    width: 101%;
+    margin-left: auto;
+    margin-right: -17em;
+    position: absolute;
+  }
+
+  .header_text_description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    width: 276px;
+    /* height: 148px; */
+    color: #FFFFFF;
+  }
+
+  .block_signature {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    white-space: pre-line;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: -10px;
+    right: -378px;
+    margin: 0;
+    width: 397px;
+    height: 91px;
+    padding: 17px 35px 0px 11px;
+    background: #000000;
+    opacity: 0.5;
+  }
+
+  .block_signature::before {
+    content: url('../../images/filimonova-podpis333.png');
+    margin: 0;
+    display: block;
+    width: 74px;
+    height: 40px;
+    position: absolute;
+    top: -53px;
+    left: 202px;
+  }
+}
