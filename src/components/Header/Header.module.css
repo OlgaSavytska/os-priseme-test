@@ -1,20 +1,21 @@
 .container_header {
-  max-width: 768px;
   overflow: hidden;
   margin: 0 auto;
   padding: 0;
 }
 
+.norm {
+  display: flex;
+}
 
 
 .header_color1 {
   margin: 0 auto;
   padding: 0;
-  max-width: 768px;
   background: #663F04;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  align-items: center;
   background-image: url('../../images/Ellipse.png');
   height: 100%;
   background-position: center;
@@ -27,7 +28,6 @@
 
 
 .borders {
-  max-width: 100%;
   padding: 21px;
   padding-bottom: 0;
   /* position: absolute; */
@@ -170,11 +170,9 @@
   .header_color1 {
     margin: 0 auto;
     padding: 0;
-    min-width: 768px;
     background: #663F04;
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
     background-image: url(/static/media/Ellipse.e7799fe7.png);
     height: 100%;
     background-position: center;

@@ -1,14 +1,14 @@
 .container_best {
-  max-width: 768px;
+
   overflow: hidden;
   margin: 0 auto;
   padding: 0;
+  display: inline;
 }
 
 .best_color1 {
   margin: 0 auto;
   padding: 0;
-  max-width: 768px;
   background: #663F04;
   overflow: hidden;
   display: flex;
@@ -212,6 +212,10 @@
 @media (min-width: 768px) {
   .ist_title {
     width: auto;
+  }
+
+  .container_best {
+    display: block;
   }
 
   .ist_title::after {
