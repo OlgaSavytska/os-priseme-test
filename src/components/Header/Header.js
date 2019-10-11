@@ -30,7 +30,7 @@ const Header = () => {
                 нагородження</p>
             </Link>
           </div>
-          <div className={s.dit}></div>
+
           <img src={woman} alt="happy woman" className={s.header_woman} />
           <p className={s.block_signature}>З повагою, Голова Фінансового відділу {'\n'}з виплати призів Олена Філімонова. *</p>
         </div>

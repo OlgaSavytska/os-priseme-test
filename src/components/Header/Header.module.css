@@ -15,7 +15,7 @@
   background: #663F04;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  justify-content: center;
   background-image: url('../../images/Ellipse.png');
   height: 100%;
   background-position: center;
@@ -173,6 +173,7 @@
     background: #663F04;
     overflow: hidden;
     display: flex;
+    justify-content: center;
     background-image: url(/static/media/Ellipse.e7799fe7.png);
     height: 100%;
     background-position: center;
@@ -183,6 +184,7 @@
   .borders {
     max-width: 100%;
     padding: 48px;
+    padding-left: auto;
     padding-bottom: 0;
     position: none;
     padding-bottom: 0;
@@ -238,4 +240,6 @@
     top: -53px;
     left: 202px;
   }
+
+
 }
