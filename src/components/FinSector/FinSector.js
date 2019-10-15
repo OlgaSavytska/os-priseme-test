@@ -2,13 +2,14 @@ import React from 'react';
 import s from '../FinSector/FinSector.module.css';
 import diplom1 from '../../images/Frame6.png';
 import diplom2 from '../../images/Frame5.2.png';
+import largeURL from '../../images/man.png';
 
 
 
 
 
 
-const FinSector = ({ openModal, largeURL, largeURL2 }) => {
+const FinSector = ({ openModal, openModal1, largeURL, largeURL2 }) => {
   return <div className={s.finsector_container
   }>
 
@@ -27,20 +28,22 @@ const FinSector = ({ openModal, largeURL, largeURL2 }) => {
         <p className={s.fin_sector_p_f_y_descr3}>Завантажте ДИПЛОМ або запишіть його номер для пред’явлення кур’єру Служби доставки (за бажанням можете роздрукувати ДИПЛОМ, після завантаження). Ознайомтеся з ДОДАТКОМ, щоб дізнатись усі подробиці Вашої перемоги.</p>
       </div>
       <div className={s.media_flex3}>
-        <button
-          onClick={() => openModal(largeURL)}
-          type="button"
-          className={s.fullscreen_button}
-          id="sertificate"
-        >
-          <img id="sertificate" src={diplom1} alt="diplom1" className={s.diplom1} /> </button>
+        <div className={s.diplom_overlow}>
+          <button
+            onClick={() => openModal(largeURL)}
+            type="button"
+            className={s.fullscreen_button}
+            id="sertificate"
+          >
+            <img id="sertificate" src={diplom1} alt="diplom1" className={s.diplom1} /> </button>
+        </div>
         <a href="../../images/Download.zip" download>
           <button className={s.button_dowload}>ЗАВАНТАЖИТИ</button>
         </a>
         <button
-          onClick={() => openModal(largeURL2)}
+          onClick={() => openModal1(largeURL)}
           type="button"
-          className={s.fullscreen_button}
+          className={s.fullscreen_button1}
           id="sertificate1"
         >
           <img id="sertificate1" src={diplom2} alt="diplom2" className={s.diplom2} /></button>
