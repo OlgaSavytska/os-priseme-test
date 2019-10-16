@@ -2,14 +2,15 @@ import React from 'react';
 import s from '../FinSector/FinSector.module.css';
 import diplom1 from '../../images/Frame6.png';
 import diplom2 from '../../images/Frame5.2.png';
-import largeURL from '../../images/man.png';
+import Modal1 from '../Modal1/Modal1';
+import Modal2 from '../Modal2/Modal2';
 
 
 
 
 
 
-const FinSector = ({ openModal, openModal1, largeURL, largeURL2 }) => {
+const FinSector = ({ openModal }) => {
   return <div className={s.finsector_container
   }>
 
@@ -30,7 +31,7 @@ const FinSector = ({ openModal, openModal1, largeURL, largeURL2 }) => {
       <div className={s.media_flex3}>
         <div className={s.diplom_overlow}>
           <button
-            onClick={() => openModal(largeURL)}
+            onClick={() => openModal(Modal2)}
             type="button"
             className={s.fullscreen_button}
             id="sertificate"
@@ -41,7 +42,7 @@ const FinSector = ({ openModal, openModal1, largeURL, largeURL2 }) => {
           <button className={s.button_dowload}>ЗАВАНТАЖИТИ</button>
         </a>
         <button
-          onClick={() => openModal1(largeURL)}
+          onClick={() => openModal(Modal1)}
           type="button"
           className={s.fullscreen_button1}
           id="sertificate1"

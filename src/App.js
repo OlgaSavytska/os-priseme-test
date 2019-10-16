@@ -7,7 +7,9 @@ import Delivery from '../src/components/Delivery/Delivery';
 import Instruction from '../src/components/Instruction/Instruction';
 import Form from '../src/components/Form/Form';
 import Congratulation from '../src/components/Congratulation/Congratulation';
-import Modal from '../src/Modal';
+import Modal2 from './components/Modal2/Modal2';
+import Modal1 from './components/Modal1/Modal1';
+import Modal from './Modal';
 
 
 
@@ -33,17 +35,19 @@ class App extends Component {
 
   render() {
 
-    const { isModalOpen, largeImageURL, largeImageURL2 } = this.state;
+    const { isModalOpen, largeImageURL } = this.state;
     return (
       <>
         <Header />
         <FinSector
           openModal={this.openModalWindow}
-          openModal1={this.openModalWindow}
         />
         {isModalOpen && (
-          <Modal largeURL={largeImageURL} closeModal={this.closeModalWindow} />)}
-
+          <Modal1 largeURL={largeImageURL} closeModal={this.closeModalWindow} />)}
+        {isModalOpen && (
+          <Modal2 largeURL={largeImageURL} closeModal={this.closeModalWindow} />)}
+        {/* {isModalOpen && (
+          <Modal1 largeURL={largeImageURL} closeModal={this.closeModalWindow} />)} */}
         <UAreTheBest />
         <Delivery />
         <Instruction />
