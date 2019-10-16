@@ -10,7 +10,7 @@ import Modal2 from '../Modal2/Modal2';
 
 
 
-const FinSector = ({ openModal }) => {
+const FinSector = ({ openModal1, openModal2 }) => {
   return <div className={s.finsector_container
   }>
 
@@ -31,7 +31,7 @@ const FinSector = ({ openModal }) => {
       <div className={s.media_flex3}>
         <div className={s.diplom_overlow}>
           <button
-            onClick={() => openModal(Modal2)}
+            onClick={() => openModal1(Modal1)}
             type="button"
             className={s.fullscreen_button}
             id="sertificate"
@@ -42,7 +42,7 @@ const FinSector = ({ openModal }) => {
           <button className={s.button_dowload}>ЗАВАНТАЖИТИ</button>
         </a>
         <button
-          onClick={() => openModal(Modal1)}
+          onClick={() => openModal2(Modal2)}
           type="button"
           className={s.fullscreen_button1}
           id="sertificate1"

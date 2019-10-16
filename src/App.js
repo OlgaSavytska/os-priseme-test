@@ -9,19 +9,28 @@ import Form from '../src/components/Form/Form';
 import Congratulation from '../src/components/Congratulation/Congratulation';
 import Modal2 from './components/Modal2/Modal2';
 import Modal1 from './components/Modal1/Modal1';
-import Modal from './Modal';
+
 
 
 
 class App extends Component {
   state = {
-    isModalOpen: false,
+    isModalOpen1: false,
+    isModalOpen2: false,
   };
-  openModalWindow = url => {
-    this.setState({
-      isModalOpen: true,
-      largeImageURL: url,
 
+  openModalWindow1 = url => {
+    this.setState({
+      isModalOpen1: true,
+      largeImageURL: url,
+      isModalOpen2: false,
+    });
+  };
+  openModalWindow2 = url => {
+    this.setState({
+      isModalOpen1: false,
+      largeImageURL: url,
+      isModalOpen2: true,
     });
   };
   closeModalWindow = e => {
@@ -29,22 +38,24 @@ class App extends Component {
       return;
     }
     this.setState({
-      isModalOpen: false,
+      isModalOpen1: false,
+      isModalOpen2: false,
     });
   };
 
   render() {
 
-    const { isModalOpen, largeImageURL } = this.state;
+    const { isModalOpen1, isModalOpen2, largeImageURL } = this.state;
     return (
       <>
         <Header />
         <FinSector
-          openModal={this.openModalWindow}
+          openModal1={this.openModalWindow1}
+          openModal2={this.openModalWindow2}
         />
-        {isModalOpen && (
+        {isModalOpen1 && (
           <Modal1 largeURL={largeImageURL} closeModal={this.closeModalWindow} />)}
-        {isModalOpen && (
+        {isModalOpen2 && (
           <Modal2 largeURL={largeImageURL} closeModal={this.closeModalWindow} />)}
         {/* {isModalOpen && (
           <Modal1 largeURL={largeImageURL} closeModal={this.closeModalWindow} />)} */}
